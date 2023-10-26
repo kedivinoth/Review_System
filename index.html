@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Service Review Portal</title>
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body> 
+    <center>
+    <h1>Athi Bike Service Review</h1>
+    <form action="insert_data.php" method="post">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+        <label for="bike_type">Bike Type:</label>
+        <input type="text" id="bike_type" name="bike_type" required><br><br>
+
+        <label for="service_date">Service Date:</label>
+        <input type="date" id="service_date" name="service_date" required><br><br>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="1">Excellent</option>
+            <option value="2">Good</option>
+            <option value="3">Normal</option>
+            <option value="4">Poor</option>
+            <option value="5">Very Poor</option>
+        </select><br><br>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</center>
+</body>
+</html>
